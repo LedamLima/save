@@ -1,102 +1,58 @@
-@font-face {
-    font-family: 'Aladdin';
-    src: url('fonte/aladdin.ttf') format('truetype');
-  }
   @font-face {
     font-family: 'Ramadhan';
     src: url('fonte/Ramadhan\ Stuff.ttf') format('truetype');
   }
-  @font-face {
-    font-family: 'Sketsa';
-    src: url('fonte/Sketsa\ Ramadhan\ Alternates.ttf') format('truetype');
-  }
+
   @font-face {
     font-family: 'Cerlions';
     src: url('fonte/Cerlions-Regular.otf') format('truetype');
   }
-*{
-    box-shadow: border-box;    
-    flex-wrap: wrap;
-    
-}
-:root{
-    --cor1:#05ffea86; 
-    --cor2:rgb(193, 193, 10);
-    --cor3:#ffea06 ;
-    }
-body{
-        background-color: #0a0130;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        margin:auto;
-        min-height: 100vh;
-    }
-#capa{
-        position: fixed; 
-        right: 50%; 
-        bottom: 50%;
-        top: 20px;
-        min-width: 100%; 
-        min-height: 100%;
-        width: auto; 
-        height: auto; 
-        z-index: -1000;
-        background: url(imagem/fundo.png) no-repeat;
-        background-size:cover ; 
-    }
-header button#button{
-    margin: 5%;
-    padding: 10;
-    box-shadow: 0.4px 0.4px  0.5px 0.8px var(--cor1);  
-    font-family: 'Sketsa';    
-    font-size: calc(1.5em + 1vw); 
-    color: var(--cor2);
-    text-shadow: 1.5px 1px 2px  rgba(255, 255, 255, 0.623); 
-    background: #faf89a00;       
-}
-section h1#nome{
-    font-weight: bold;
-    text-align: center;
-    font-family:'Ramadhan';
-    font-size: calc(5.5em + 1vw); 
-    color: var(--cor3);
-    -webkit-text-stroke: 0.01px rgba(49, 3, 3, 0.697);
-    margin: auto;  
-   text-shadow: 2.8px 2.8px 2.8px  rgb(97, 18, 18);
-}
-#save{
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Aladdin'  ;
-    font-size: calc(2em + 1vw); 
-    color: white;
-    margin: 05px;
-} 
-#data {
-    font-size: calc(2em + 1vw); 
-    font-weight: bold;
-    font-family: 'Aladdin';
-    color: var(--cor3);
-    text-shadow: 4px 1.6px 1px  black ; 
-    font-weight: bolder;
-    line-height: 1.8em; 
-    letter-spacing: 0.1em;
-    text-align: center;
-    margin: 10px;
-    padding: 2px;
-}
-#texto {
-    font-size: calc(1em + 1vw); 
-    font-weight: normal;
-    font-family: 'Cerlions';
-    color: var(--cor3);
-    text-shadow: 2px 2px 2px  rgb(17, 0, 0) ; 
-    font-weight: bolder;
-    line-height: 1.8em; 
-    letter-spacing: 0.1em;
-    text-align: center;
-    margin: auto;
-    padding:auto;
-}
 
+ #img{
+    background-image: url(imagem/fundo.png); 
+    position: fixed; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -1000;
+    background-size: cover;
+    margin-top: 15%;
+ }
+
+#op{
+    font-size: calc(2em + 1vw); 
+    font-family: 'Cerlions';
+    color: rgb(139, 27, 2);
+    text-align: center;
+    margin-top: 36%;
+}
+.loja{
+    font-size: calc(1em + 1vw); 
+    font-family: 'Cerlions';
+    color: rgb(13, 3, 0);
+    font-weight: bolder;
+    text-align: justify;
+    line-height: 1.2em;
+    margin-top: 38px;
+    margin-left: 38px;
+}
+#tamanho{
+  font-size: calc(1em + 1vw); 
+  font-family: 'Cerlions';
+  color: black;
+  font-weight: bolder;
+  text-align: justify;
+  margin: 38px;
+}
+footer{
+    font-size: calc(1.4em + 1vw); 
+    font-family: 'Ramadhan';
+    color: rgb(139, 27, 2);
+    font-weight: bolder;
+    text-align: center;
+    margin: 15px;
+    margin-top: 58px;
+}
